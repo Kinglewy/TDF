@@ -518,3 +518,29 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+.logo-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #fff;
+    padding: 20px 0;
+  }
+  
+  .logo-track {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .logo-track img {
+    height: 60px;
+    margin: 0 40px;
+    object-fit: contain;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
