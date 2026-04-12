@@ -1,0 +1,9 @@
+  =>  Template Name    : TDF - Tooro Development Forum
+
+  =>  Template Link    : https://chapaanetworks.com
+
+  =>  Template License : https://chapaanetworks.com
+
+  =>  Template Author  : Karamagi Lawrence
+
+  =>  Author Website   : https://chapaanetworks.com
