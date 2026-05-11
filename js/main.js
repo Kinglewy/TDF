@@ -77,3 +77,27 @@
     
 })(jQuery);
 
+// Open PDF
+document.querySelectorAll('.open-pdf').forEach(button => {
+    button.addEventListener('click', function () {
+        const pdfUrl = this.getAttribute('data-pdf');
+
+        document.getElementById('pdfViewer').src = pdfUrl;
+        document.getElementById('pdfModal').style.display = 'block';
+    });
+});
+
+// Close PDF
+document.querySelector('.close-pdf').addEventListener('click', function () {
+    document.getElementById('pdfModal').style.display = 'none';
+    document.getElementById('pdfViewer').src = '';
+});
+
+// Close when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('pdfModal');
+    if (event.target === modal) {
+        modal.style.display = "none";
+        document.getElementById('pdfViewer').src = '';
+    }
+}
